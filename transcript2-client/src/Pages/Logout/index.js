@@ -11,7 +11,7 @@ export default function Logout() {
 
 	useEffect(() => {
 		const requestLogOut = async () => {
-			const res = await axios.post(`${window.location.protocol}//${window.location.hostname}:8080/auth/release`, "", { withCredentials: true });
+			const res = await axios.post(`${window.location.protocol}//${window.location.hostname}:8080/auth/release/`, "", { withCredentials: true });
 			setIsLoggedOut(true);
 		};
 		requestLogOut();

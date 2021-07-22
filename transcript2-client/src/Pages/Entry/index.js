@@ -11,7 +11,7 @@ export default function Entry() {
 
 	useEffect(() => {
 		const requestIsLoggedIn = async () => {
-			const res = await axios.get(`${window.location.protocol}//${window.location.hostname}:8080/auth/check`, { withCredentials: true });
+			const res = await axios.get(`${window.location.protocol}//${window.location.hostname}:8080/auth/check/`, { withCredentials: true });
 			setIsLoggedIn(res.data);
 		};
 		requestIsLoggedIn();
