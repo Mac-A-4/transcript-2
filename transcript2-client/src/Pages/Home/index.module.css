@@ -1,0 +1,152 @@
+
+.Container {
+	padding-top: 20px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.NoneContainer {
+	max-width: calc(80% - 20px);
+	background-color: rgb(246, 248, 250);
+	border: 1px solid rgb(235, 237, 239);
+	padding: 20px;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.Button {
+	margin-top: 5px;
+	width: auto;
+	height: 30px;
+	background-color: rgb(46, 164, 79);
+	border: 1px solid rgb(43, 145, 72);
+	border-radius: 5px;
+	color: white;
+	padding: 0px 20px;
+}
+
+.Button:hover {
+	cursor: pointer;
+	filter: brightness(90%);
+}
+
+.NoneTop {
+	font-size: 22px;
+	font-weight: 300;
+	padding-bottom: 20px;
+}
+
+.OverlayContainer {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 10;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.InnerOverlay {
+	background-color: rgb(246, 248, 250);
+	border: 1px solid rgb(235, 237, 239);
+	padding: 20px;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	font-size: 12px;
+}
+
+.OverlayTop {
+	font-size: 22px;
+	font-weight: 300;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+.Input {
+	width: auto;
+	height: 30px;
+	padding-left: 5px;
+	border: 1px solid rgb(235, 237, 239);
+	border-radius: 5px;
+}
+
+.Input:hover {
+	filter: brightness(90%);
+}
+
+.OverlayControls {
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.ListContainer {
+	background-color: rgb(246, 248, 250);
+	border: 1px solid rgb(235, 237, 239);
+	padding: 20px;
+	margin-top: 20px;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+}
+
+.LargeContainer {
+	width: 90%;
+	max-width: 600px;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.SomeContainer {
+	background-color: rgb(246, 248, 250);
+	border: 1px solid rgb(235, 237, 239);
+	padding: 20px;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.SomeTop {
+	font-size: 22px;
+	font-weight: 300;
+	padding-bottom: 20px;
+}
+
+.ListEntry {
+	border-top: 1px solid rgb(235, 237, 239);
+	border-bottom: 1px solid rgb(235, 237, 239);
+	margin: 2px;
+	padding: 10px;
+	font-size: 14px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.ListEntry:hover {
+	filter: brightness(90%);
+}
+
+.ListEntry div .Button {
+	margin-left: 2px;
+	margin-right: 2px;
+	padding-left: 12px;
+	padding-right: 12px;
+}
+
+.DeleteName {
+	width: 100%;
+	text-align: center;
+}

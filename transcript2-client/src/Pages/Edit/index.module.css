@@ -1,0 +1,244 @@
+
+.Container {
+	padding-top: 20px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.Container1 {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.InnerContainer {
+	padding: 20px;
+	background-color: rgb(246, 248, 250);
+	border: 1px solid rgb(235, 237, 239);
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+.LargeContainer {
+	width: 90%;
+	max-width: 800px;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.LargeHead {
+	font-size: 22px;
+}
+
+.Button {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width: auto;
+	height: 30px;
+	background-color: rgb(46, 164, 79);
+	border: 1px solid rgb(43, 145, 72);
+	border-radius: 5px;
+	color: white;
+	padding: 0px 20px;
+}
+
+.Button:hover {
+	cursor: pointer;
+	filter: brightness(90%);
+}
+
+.HeadContainer {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.SectionHead {
+	font-size: 22px;
+	text-align: center;
+}
+
+.Input {
+	width: auto;
+	height: 30px;
+	padding-left: 5px;
+	border: 1px solid rgb(235, 237, 239);
+	border-radius: 5px;
+}
+
+.Input:hover {
+	filter: brightness(90%);
+}
+
+.FieldInput {
+	font-size: 12px;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+.SaveView button {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.SaveView {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.CourseInput {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	display: flex;
+	flex-direction: column;
+	border-top: 1px solid rgb(235, 237, 239);
+	border-bottom: 1px solid rgb(235, 237, 239);
+}
+
+.SubjectContainer {
+	padding: 20px;
+	background-color: rgb(246, 248, 250);
+	border: 1px solid rgb(235, 237, 239);
+	border-radius: 5px;
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.SubjectContainer .SectionHead {
+	margin-bottom: 20px;
+}
+
+.SubjectContainer .Button {
+	margin: 0;
+}
+
+.CourseInner {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.SmallCourse {
+	display: flex;
+	flex-direction: column;
+	width: 18%;
+}
+
+.SmallCourse .Button {
+	margin-top: 20px;
+	padding: 0;
+}
+
+.SubjectInner {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+
+.SubjectInner1 {
+	flex: 1;
+}
+
+.SubjectInner2 {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	width: 25%;
+	padding-left: 5%;
+}
+
+.SubjectInner2 .SmallCourse {
+	width: 45%;
+}
+
+.SubjectHead {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.SubjectHead1 {
+	flex: 1;
+}
+
+.SubjectHead2 {
+	margin-left: 5px;
+}
+
+@media only screen and (max-width: 510px) {
+  	.SubjectHead2 {
+		margin-left: -5px;
+	}
+}
+
+.SubjectHead2 button {
+	margin-top: 20px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.SubjectContainer1 {
+	width: 90%;
+	max-width: 800px;
+}
+
+.SubjectContainer1 .LargeContainer {
+	width: 100%;
+}
+
+.CourseContainer {
+	width: 100%;
+}
+
+.ScaleInput {
+	margin-bottom: 5px;
+	display: flex;
+	align-items: center;
+	width: 90%;
+	max-width: 400px;
+	font-size: 12px;
+}
+
+.ScaleInput1 {
+	width: 30px;
+}
+
+.ScaleInput2 {
+	flex: 1;
+}
+
+.ScaleInput2 input {
+	margin-left: 5%;
+	width: 95%;
+}
+
+.CheckContainer {
+	display: flex;
+	align-items: center;
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+
+.NotesContainer {
+	width: 100%;
+	height: 400px;
+	overflow: scroll;
+}
+
+.NotesContainer textarea {
+	border: 0;
+}
