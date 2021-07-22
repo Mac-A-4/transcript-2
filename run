@@ -1,0 +1,5 @@
+cd transcript2-client
+./run
+cd ../transcript2-server
+./run
+cd ..
