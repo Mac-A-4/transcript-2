@@ -9,7 +9,7 @@ app.use(cookie_session({
 	keys: [ 'sdfghuawhuidaowfhbsevctsftegddwhiduhauihwdgautfvtasegdsyhfuijriodujgudhrygftsefdtry' ]
 }));
 app.use(cors({
-	origin: 'http://localhost:3000',
+	origin: ['http://localhost:3000', 'http://rivendelltranscript.com'],
 	credentials: true
 }));
 app.use(express.json());
