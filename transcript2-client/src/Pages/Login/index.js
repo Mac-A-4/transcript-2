@@ -37,6 +37,9 @@ export default function Login() {
 		return (
 			<div className={styles["Container-Outer"]}>
 				<div className={styles.Container}>
+					<div className={styles.Head1}>
+						Rivendell Transcript
+					</div>
 					<div className={styles.Head}>
 						Login
 					</div>

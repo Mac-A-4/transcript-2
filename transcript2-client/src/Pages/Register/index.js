@@ -68,7 +68,7 @@ export default function Register() {
 							{warning}
 						</div>
 						<button className={styles.Button} onClick={()=>{ onLogin(); }}>
-							Reigster
+							Register
 						</button>
 					</div>
 					<Link className={styles.Register} to="/login">
