@@ -2,6 +2,8 @@ const express = require('express');
 const cookie_session = require('cookie-session');
 const cors = require('cors');
 const database = require('./database');
+const https = require('https');
+const fs = require('fs');
 
 const app = express();
 app.use(cookie_session({
@@ -13,6 +15,7 @@ app.use(cors({
 	credentials: true
 }));
 app.use(express.json());
+app.use(express.static(__dirname + "/static", {dotfiles: 'allow'}));
 
 app.post('/auth/login', async (req, res) => {
 	req.session.username = undefined;
@@ -178,4 +181,12 @@ app.post('/save/delete', async (req, res) => {
 	res.send('Success.');
 });
 
-app.listen(8080);
+const cert = {
+	key: fs.readFileSync('/etc/letsencrypt/live/api.rivendelltranscript.com/privkey.pem'),
+	cert: fs.readFileSync('/etc/letsencrypt/live/api.rivendelltranscript.com/cert.pem'),
+	ca: fs.readFileSync('/etc/letsencrypt/live/api.rivendelltranscript.com/chain.pem')
+};
+
+https.createServer(cert, app).listen(443);
+
+//app.listen(80);
