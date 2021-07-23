@@ -130,7 +130,7 @@ function List() {
 
 	const refreshListAsync = async () => {
 		setList(null);
-		const res = await axios.get(`${window.location.protocol}//${window.location.hostname}:8080/save/enum/`, { withCredentials: true });
+		const res = await axios.get(`https://api.rivendelltranscript.com/save/enum/`, { withCredentials: true });
 		setList(res.data);
 	};
 	
@@ -143,7 +143,7 @@ function List() {
 	}, []);
 
 	const onAddAsync = async (name) => {
-		const res = await axios.post(`${window.location.protocol}//${window.location.hostname}:8080/save/create/`,
+		const res = await axios.post(`https://api.rivendelltranscript.com/save/create/`,
 			{
 				name: name,
 				value: getDefaultSave()
@@ -160,7 +160,7 @@ function List() {
 	};
 
 	const onDeleteAsync = async (name) => {
-		const res = await axios.post(`${window.location.protocol}//${window.location.hostname}:8080/save/delete/`,
+		const res = await axios.post(`https://api.rivendelltranscript.com/save/delete/`,
 			{
 				name: name
 			},

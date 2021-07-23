@@ -14,7 +14,7 @@ export default function Login() {
 
 	const onLogin = async () => {
 		try {
-			let res = await axios.post(`${window.location.protocol}//${window.location.hostname}:8080/auth/login/`,
+			let res = await axios.post(`https://api.rivendelltranscript.com/auth/login/`,
 				{
 					username: username,
 					password: password

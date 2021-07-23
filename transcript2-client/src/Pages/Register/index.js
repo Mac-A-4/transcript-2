@@ -19,7 +19,7 @@ export default function Register() {
 			return;
 		}
 		try {
-			let res = await axios.post(`${window.location.protocol}//${window.location.hostname}:8080/auth/register/`,
+			let res = await axios.post(`https://api.rivendelltranscript.com/auth/register/`,
 				{
 					username: username,
 					password: password

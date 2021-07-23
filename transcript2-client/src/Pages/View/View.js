@@ -644,7 +644,7 @@ export default function View(props) {
 	}
 	useEffect(() => {
 		const requestValue = async () => {
-			const res = await axios.post(`${window.location.protocol}//${window.location.hostname}:8080/save/read/`,
+			const res = await axios.post(`https://api.rivendelltranscript.com/save/read/`,
 				{ name: name },
 				{ withCredentials: true }
 			);

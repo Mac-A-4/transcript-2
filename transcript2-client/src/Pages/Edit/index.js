@@ -196,7 +196,7 @@ export default function Edit() {
 
 	useEffect(() => {
 		const requestValue = async () => {
-			const res = await axios.post(`${window.location.protocol}//${window.location.hostname}:8080/save/read/`,
+			const res = await axios.post(`https://api.rivendelltranscript.com/save/read/`,
 				{ name: name },
 				{ withCredentials: true }
 			);
@@ -206,7 +206,7 @@ export default function Edit() {
 	}, []);
 
 	const onSaveAsync = async (show) => {
-		const res = await axios.post(`${window.location.protocol}//${window.location.hostname}:8080/save/update/`,
+		const res = await axios.post(`https://api.rivendelltranscript.com/save/update/`,
 			{ 
 				name: name,
 				value: JSON.stringify(value)
