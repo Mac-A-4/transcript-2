@@ -1,1 +1,1 @@
-cp /build/* /var/www/html/
+cp build/* /var/www/html/
