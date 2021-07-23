@@ -11,7 +11,12 @@ app.use(cookie_session({
 	keys: [ 'sdfghuawhuidaowfhbsevctsftegddwhiduhauihwdgautfvtasegdsyhfuijriodujgudhrygftsefdtry' ]
 }));
 app.use(cors({
-	origin: ['http://localhost:3000', 'http://rivendelltranscript.com'],
+	origin: [
+		'http://localhost:3000',
+		'http://rivendelltranscript.com',
+		'https://rivendelltranscript.com',
+		'https://www.rivendelltranscript.com'
+	],
 	credentials: true
 }));
 app.use(express.json());
